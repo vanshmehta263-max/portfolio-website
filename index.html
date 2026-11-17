@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vansh Mehta - Developer Portfolio">
+    <title>Vansh Mehta | Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- 3D Background -->
+    <canvas id="particles"></canvas>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <div class="grid-background"></div>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <a href="#home" class="logo">
+            <span class="logo-v">V</span><span class="logo-m">M</span>
+            <span class="logo-name">VANSH MEHTA</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+            ☰
+        </button>
+
+        <nav id="navMenu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact" class="nav-contact">Let's Talk ↗</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero section" id="home">
+
+            <div class="hero-content reveal">
+                <div class="availability">
+                    <span class="status-dot"></span>
+                    AVAILABLE FOR OPPORTUNITIES
+                </div>
+
+                <p class="intro">HELLO, I'M VANSH MEHTA</p>
+
+                <h1>
+                    Building Digital<br>
+                    Experiences That<br>
+                    <span class="gradient-text">Make An Impact.</span>
+                </h1>
+
+                <p class="hero-description">
+                    I'm a B.Tech student and aspiring software developer
+                    passionate about web development, programming,
+                    and building innovative digital solutions.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="primary-btn">Explore My Work ↗</a>
+                    <a href="#contact" class="secondary-btn">Contact Me</a>
+                </div>
+
+                <div class="social-text">
+                    <span>BASED IN INDIA</span>
+                    <span class="line"></span>
+                    <span>DEVELOPER & TECH ENTHUSIAST</span>
+                </div>
+            </div>
+
+            <!-- 3D Logo -->
+            <div class="hero-visual reveal">
+                <div class="logo-orbit orbit-one"></div>
+                <div class="logo-orbit orbit-two"></div>
+
+                <div class="logo-stage">
+                    <div class="big-logo">
+                        <span>V</span><span>M</span>
+                    </div>
+                    <div class="logo-reflection">VM</div>
+                </div>
+
+                <div class="floating-card card-top">
+                    <span>✦</span> CREATIVE DEVELOPER
+                </div>
+
+                <div class="floating-card card-bottom">
+                    <span class="status-dot"></span> ALWAYS LEARNING
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="section content-section" id="about">
+            <div class="section-label">01 / ABOUT ME</div>
+            <h2>Turning Ideas Into <span class="gradient-text">Reality.</span></h2>
+
+            <div class="about-grid">
+                <div class="about-card glass-card">
+                    <div class="about-icon">✦</div>
+                    <h3>Who Am I?</h3>
+                    <p>
+                        I'm Vansh Mehta, a computer science student
+                        interested in software development and modern
+                        web technologies. I enjoy learning new skills
+                        and turning creative ideas into working projects.
+                    </p>
+                </div>
+
+                <div class="about-card glass-card">
+                    <div class="about-icon">⌘</div>
+                    <h3>My Approach</h3>
+                    <p>
+                        I believe in continuous learning, practical
+                        experience, clean code, problem-solving,
+                        and creating user-friendly digital experiences.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="section content-section" id="skills">
+            <div class="section-label">02 / MY EXPERTISE</div>
+            <h2>Skills & <span class="gradient-text">Technologies.</span></h2>
+
+            <div class="skills-grid">
+                <div class="skill-card glass-card">
+                    <span class="skill-icon">🌐</span>
+                    <h3>Frontend Development</h3>
+                    <p>HTML5, CSS3, JavaScript, Bootstrap</p>
+                    <div class="skill-line"><span style="width:85%"></span></div>
+                </div>
+
+                <div class="skill-card glass-card">
+                    <span class="skill-icon">🐍</span>
+                    <h3>Programming</h3>
+                    <p>Python, C, Java</p>
+                    <div class="skill-line"><span style="width:75%"></span></div>
+                </div>
+
+                <div class="skill-card glass-card">
+                    <span class="skill-icon">⚙️</span>
+                    <h3>Development Tools</h3>
+                    <p>VS Code, Git, GitHub, Dev-C++</p>
+                    <div class="skill-line"><span style="width:80%"></span></div>
+                </div>
+
+                <div class="skill-card glass-card">
+                    <span class="skill-icon">🧠</span>
+                    <h3>Core Concepts</h3>
+                    <p>Data Structures, Algorithms, Problem Solving</p>
+                    <div class="skill-line"><span style="width:70%"></span></div>
+                </div>
+            </div>
+            <p class="small-note">Skill bars are visual indicators, not verified proficiency scores.</p>
+        </section>
+
+        <!-- Projects -->
+        <section class="section content-section" id="projects">
+            <div class="section-label">03 / SELECTED WORK</div>
+            <h2>Projects I've <span class="gradient-text">Built.</span></h2>
+
+            <div class="projects-grid">
+
+                <article class="project-card glass-card">
+                    <div class="project-number">PROJECT 01</div>
+                    <div class="project-visual visual-one">RC.</div>
+                    <h3>RideCare</h3>
+                    <p>A vehicle management application concept with user authentication, dashboards and reports.</p>
+                    <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Flask</span></div>
+                </article>
+
+                <article class="project-card glass-card">
+                    <div class="project-number">PROJECT 02</div>
+                    <div class="project-visual visual-two">BB.</div>
+                    <h3>Budget Buddy</h3>
+                    <p>A personal budgeting and expense-tracking web application with backup and data management
+                        features.</p>
+                    <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                </article>
+
+                <article class="project-card glass-card">
+                    <div class="project-number">PROJECT 03</div>
+                    <div class="project-visual visual-three">IR.</div>
+                    <h3>IRVision</h3>
+                    <p>An AI project concept for infrared satellite image enhancement and IR-to-RGB translation.</p>
+                    <div class="tags"><span>Python</span><span>AI</span><span>Computer Vision</span></div>
+                </article>
+
+                <article class="project-card glass-card">
+                    <div class="project-number">PROJECT 04</div>
+                    <div class="project-visual visual-four">TL.</div>
+                    <h3>The Learning Library</h3>
+                    <p>A multi-page library website concept featuring books, categories, membership and contact pages.
+                    </p>
+                    <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                </article>
+
+                <!-- PROJECT 05 -->
+                <article class="project-card glass-card">
+                    <div class="project-number">PROJECT 05</div>
+                    <div class="project-visual visual-five">EM.</div>
+                    <h3>Expense Management App</h3>
+                    <p>A personal finance application for tracking expenses, managing budgets, and viewing financial
+                        summaries.</p>
+                    <div class="tags">
+                        <span>HTML</span><span>CSS</span>
+                        <span>JavaScript</span><span>Local Storage</span>
+                    </div>
+                </article>
+
+                <!-- PROJECT 06 -->
+                <article class="project-card glass-card">
+                    <div class="project-number">PROJECT 06</div>
+                    <div class="project-visual visual-six">SA.</div>
+                    <h3>Student Attendance System</h3>
+                    <p>A student management system concept for recording attendance and organizing student information.
+                    </p>
+                    <div class="tags">
+                        <span>Python</span><span>HTML</span>
+                        <span>CSS</span><span>JavaScript</span>
+                    </div>
+                </article>
+
+                <!-- PROJECT 07 -->
+                <article class="project-card glass-card">
+                    <div class="project-number">PROJECT 07</div>
+                    <div class="project-visual visual-seven">PS.</div>
+                    <h3>Private Search Engine</h3>
+                    <p>A personal search engine project focused on private, locally hosted search functionality.</p>
+                    <div class="tags">
+                        <span>Python</span><span>Flask</span>
+                        <span>HTML</span><span>JavaScript</span>
+                    </div>
+                </article>
+
+                <!-- PROJECT 08 -->
+                <article class="project-card glass-card">
+                    <div class="project-number">PROJECT 08</div>
+                    <div class="project-visual visual-eight">AI.</div>
+                    <h3>Personal AI Agent</h3>
+                    <p>An AI assistant project concept designed to explore intelligent responses and personal
+                        productivity automation.</p>
+                    <div class="tags">
+                        <span>Python</span><span>AI</span><span>API</span>
+                    </div>
+                </article>
+
+                <!-- PROJECT 09 -->
+                <article class="project-card glass-card">
+                    <div class="project-number">PROJECT 09</div>
+                    <div class="project-visual visual-nine">HG.</div>
+                    <h3>Hangman Game</h3>
+                    <p>An interactive word-guessing game developed to practice programming logic and user interaction.
+                    </p>
+                    <div class="tags">
+                        <span>Python</span><span>HTML</span>
+                        <span>CSS</span><span>JavaScript</span>
+                    </div>
+                </article>
+
+                <!-- PROJECT 10 -->
+                <article class="project-card glass-card">
+                    <div class="project-number">PROJECT 10</div>
+                    <div class="project-visual visual-ten">PF.</div>
+                    <h3>Developer Portfolio</h3>
+                    <p>A personal portfolio showcasing technical skills, projects, professional experience and
+                        achievements.</p>
+                    <div class="tags">
+                        <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                    </div>
+                </article>
+
+
+            </div>
+        </section>
+
+        <!-- CERTIFICATIONS SECTION -->
+
+        <section class="section content-section" id="certifications">
+
+            <div class="section-label">04 / CERTIFICATIONS & ACHIEVEMENTS</div>
+
+            <h2>My Professional
+                <span class="gradient-text">Certifications.</span>
+            </h2>
+
+            <p class="certificate-intro">
+                Learning, improving and validating my technical knowledge
+                through certifications and practical experiences.
+            </p>
+
+            <div class="certification-grid">
+
+                <article class="certificate-card glass-card">
+                    <div class="certificate-top">
+                        <div class="certificate-icon">🏆</div>
+                        <span class="certificate-number">CERTIFICATE 01</span>
+                    </div>
+
+                    <span class="certificate-category">INTERNSHIP</span>
+                    <h3>Python Programming Internship</h3>
+                    <p>Datheon</p>
+                    <div class="certificate-footer">
+                        <span>Python Programming</span>
+                        <span>↗</span>
+                    </div>
+                </article>
+
+                <article class="certificate-card glass-card">
+                    <div class="certificate-top">
+                        <div class="certificate-icon">💻</div>
+                        <span class="certificate-number">CERTIFICATE 02</span>
+                    </div>
+
+                    <span class="certificate-category">INTERNSHIP</span>
+                    <h3>Full Stack Web Development Internship</h3>
+                    <p>Datheon</p>
+                    <div class="certificate-footer">
+                        <span>Web Development</span>
+                        <span>↗</span>
+                    </div>
+                </article>
+
+                <article class="certificate-card glass-card">
+                    <div class="certificate-top">
+                        <div class="certificate-icon">⚡</div>
+                        <span class="certificate-number">CERTIFICATE 03</span>
+                    </div>
+
+                    <span class="certificate-category">CODING</span>
+                    <h3>CodeChef Certificates</h3>
+                    <p>CodeChef</p>
+                    <div class="certificate-footer">
+                        <span>Competitive Programming</span>
+                        <span>↗</span>
+                    </div>
+                </article>
+
+                <article class="certificate-card glass-card">
+                    <div class="certificate-top">
+                        <div class="certificate-icon">🔐</div>
+                        <span class="certificate-number">CERTIFICATE 04</span>
+                    </div>
+
+                    <span class="certificate-category">AWARENESS</span>
+                    <h3>AI & Cybersecurity Awareness</h3>
+                    <p>Certificate of Participation / Completion</p>
+                    <div class="certificate-footer">
+                        <span>AI & Cybersecurity</span>
+                        <span>↗</span>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+        <a href="#certifications">Certifications</a>
+
+        <!-- Education -->
+        <section class="section content-section" id="education">
+            <div class="section-label">04 / EDUCATION</div>
+            <h2>My Learning <span class="gradient-text">Journey.</span></h2>
+
+            <div class="education-card glass-card">
+                <div class="education-icon">🎓</div>
+                <div>
+                    <span class="education-date">2025 — 2029</span>
+                    <h3>Bachelor of Technology (B.Tech)</h3>
+                    <p>ABES Institute of Technology</p>
+                    <p class="education-detail">Computer Science / Data Science</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+
+        <section class="section contact-section" id="contact">
+            <div class="section-label">05 / GET IN TOUCH</div>
+
+            <h2>Let's Build Something
+                <span class="gradient-text">Amazing.</span>
+            </h2>
+
+            <p>Have an idea, opportunity, or project? Let's connect.</p>
+
+            <div class="contact-details-grid">
+
+                <div class="contact-detail-card glass-card">
+                    <div class="detail-icon">☎</div>
+                    <span>PHONE NUMBER</span>
+                    <h3>+91 8851369797</h3>
+                    <a href="tel:+918851369797">Call Me ↗</a>
+                </div>
+
+                <div class="contact-detail-card glass-card">
+                    <div class="detail-icon">✉</div>
+                    <span>EMAIL ADDRESS</span>
+                    <h3>vanshmehta263@gmail.com</h3>
+                    <a href="mailto:vanshmehta263@gmail.com">Send Email ↗</a>
+                </div>
+
+                <div class="contact-detail-card glass-card">
+                    <div class="detail-icon">⌘</div>
+                    <span>GITHUB PROFILE</span>
+                    <h3>Vansh Mehta</h3>
+                    <a href="https://github.com/vanshmehta263-max" target="_blank" rel="noopener noreferrer">
+                        Visit GitHub ↗
+                    </a>
+                </div>
+
+                <div class="contact-detail-card glass-card">
+                    <div class="detail-icon">◉</div>
+                    <span>WHATSAPP</span>
+                    <h3>Let's Connect</h3>
+                    <a href="https://wa.me/918851369797" target="_blank" rel="noopener noreferrer">
+                        Chat on WhatsApp ↗
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="contact-bottom glass-card">
+                <div>
+                    <span class="contact-small">OPEN TO OPPORTUNITIES</span>
+                    <h3>Let's create something extraordinary.</h3>
+                    <p>I'm always interested in learning, collaborating and building new projects.</p>
+                </div>
+                <a href="mailto:vanshmehta263@gmail.com" class="primary-btn">
+                    Let's Talk ↗
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <a href="#home" class="footer-logo">VM.</a>
+        <p>Designed & Developed by Vansh Mehta</p>
+        <p>© <span id="year"></span> All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
